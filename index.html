@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Rose Day 🌹</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Poppins', sans-serif; }
+    body { background: linear-gradient(135deg, #ffdde1, #ee9ca7); color: #2c2c2c; }
+
+    header {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 40px;
+    }
+
+    header h1 { font-size: 3rem; color: #b3003b; }
+    header p { margin: 15px 0; font-size: 1.2rem; }
+
+    .btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      background: #b3003b;
+      color: white;
+      border-radius: 30px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+    .btn:hover { background: #80002a; }
+
+    nav {
+      position: fixed;
+      top: 0; width: 100%;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(10px);
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 12px 0;
+      z-index: 10;
+    }
+    nav a {
+      text-decoration: none;
+      color: #b3003b;
+      font-weight: 600;
+    }
+
+    section { padding: 80px 8%; }
+    section h2 { text-align: center; font-size: 2.2rem; color: #b3003b; margin-bottom: 30px; }
+
+    /* Gallery */
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+      transition: transform 0.4s;
+    }
+    .gallery img:hover { transform: scale(1.08); }
+
+    /* Cards */
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
+    }
+    .card {
+      background: rgba(255,255,255,0.85);
+      padding: 25px;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    }
+    .card h3 { color: #b3003b; margin-bottom: 10px; }
+
+    footer {
+      text-align: center;
+      padding: 25px;
+      background: rgba(255,255,255,0.7);
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="#home">Home</a>
+  <a href="#gallery">Gallery</a>
+  <a href="#messages">Messages</a>
+  <a href="#types">Rose Meanings</a>
+</nav>
+
+<header id="home">
+  <h1>Happy Rose Day 🌹</h1>
+  <p>Roses speak the words the heart cannot explain.</p>
+  <a href="#images" class="btn">Explore Roses</a>
+</header>
+
+<section id="images">
+  <h2>Rose Gallery</h2>
+  <div class="gallery">
+    <img src="images/rose1.jpeg" alt="Red Rose">
+    <img src="images/rose2.jpeg" alt="Pink Rose">
+    <img src="images/rose3.jpeg" alt="White Rose">
+    <img src="images/rose4.jpeg" alt="Yellow Rose">
+  </div>
+</section>
+
+<section id="messages">
+  <h2>Rose Day Messages</h2>
+  <div class="cards">
+    <div class="card">
+      <h3>For LOVE </h3>
+      <p>Like a rose, our LOVE adds color and fragrance to life.</p>
+      <P>LOVE SHOWN BY AAYUSH </P>
+    </div>
+    <div class="card">
+      <h3>For Love</h3>
+      <p>Every petal reminds me how special you are.</p>
+      <P>I LOVE YOU NANI </P>
+    </div>
+    <div class="card">
+      <h3>For Care</h3>
+      <p>A rose for you, to brighten your day with a smile.</p>
+      <p>MADE WITH PURITY </p>
+    </div>
+  </div>
+</section>
+
+<section id="types">
+  <h2>Meaning of Rose Colors</h2>
+  <div class="cards">
+    <div class="card"><h3>Red 🌹</h3><p>Love, passion, deep emotions.</p></div>
+    <div class="card"><h3>Pink 🌸</h3><p>Admiration, sweetness, joy.</p></div>
+    <div class="card"><h3>White 🤍</h3><p>Peace, purity, respect.</p></div>
+    <div class="card"><h3>Yellow 💛</h3><p>Kindness, happiness, warmth.</p></div>
+  </div>
+</section>
+
+<footer>
+  <p>Made with 🌹 for Rose Day | Share Love </p>
+</footer>
+
+</body>
+</html>
